@@ -8,11 +8,11 @@ from constants import *
 def main():
     pygame.init()
     print("Starting asteroids!")
-    print(f"Screen width: {SCREEN_WIDTH}")
-    print(f"Screen height: {SCREEN_HEIGHT}")
+    #This sets the screen size to var's set in constants.py
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
     dt = 0
+    #this while loop is the main game loop, we created a clock object above this to use to setup and limit the fps, the flip method redraws the scene
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
